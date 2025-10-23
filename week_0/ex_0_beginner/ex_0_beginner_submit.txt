@@ -23,6 +23,6 @@ Namespaces are one honking great idea -- let's do more of those!
 
 My name is Anuksha Kamath
 
-When I went fishing to get fishesss
+When I went fishing to get fishesss.
 
 Process finished with exit code 0
