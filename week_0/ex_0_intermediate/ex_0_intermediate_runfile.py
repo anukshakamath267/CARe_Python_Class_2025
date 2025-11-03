@@ -7,10 +7,10 @@ time = float(input("Enter the time:"))
 if initial_count.isdigit() and final_count.isdigit():
     initial_count = int(initial_count)
     final_count = int(final_count)
-    if initial_count > 0 and final_count > 0 and time > 0:
+    if initial_count >0 and final_count >0 and time> 0:
         growth_rate = (math.log(final_count) - math.log(initial_count)) / time
-        print('The growth rate is:', growth_rate)
+        print("Growth rate:", growth_rate)
     else:
-        print("Enter positive numbers only")
+        print("please enter a positive number")
 else:
-    print("Enter  valid numbers only")
+    print("please enter a valid number")
