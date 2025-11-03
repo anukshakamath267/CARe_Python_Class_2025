@@ -1,11 +1,16 @@
 #YOUR CODE FOR EX_0 INTERMEDIATE HERE
 import math
 
-initial_count = float(input("Enter the initial count:"))
-final_count = float(input("Enter the final count:"))
+initial_count = input("Enter the initial count:").strip()
+final_count = input("Enter the final count:").strip()
 time = float(input("Enter the time:"))
-if initial_count > 0 and final_count > 0 and time > 0:
-    growth_rate =(math.log(final_count) - math.log(initial_count)) / time
-    print("The growth rate is", growth_rate)
+if initial_count.isdigit() and final_count.isdigit():
+    initial_count = int(initial_count)
+    final_count = int(final_count)
+    if initial_count > 0 and final_count > 0 and time > 0:
+        growth_rate = (math.log(final_count) - math.log(initial_count)) / time
+        print('The growth rate is:', growth_rate)
+    else:
+        print("Enter positive numbers only")
 else:
-    print("Please type correct value")
+    print("Enter  valid numbers only")
